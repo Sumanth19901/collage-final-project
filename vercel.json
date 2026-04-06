@@ -2,14 +2,6 @@
   "version": 2,
   "builds": [
     {
-      "src": "back-end/acia_backend/wsgi.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python3.9"
-      }
-    },
-    {
       "src": "front-end/package.json",
       "use": "@vercel/static-build",
       "config": {
@@ -18,10 +10,6 @@
     }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/back-end/acia_backend/wsgi.py"
-    },
     {
       "src": "/assets/(.*)",
       "headers": {
