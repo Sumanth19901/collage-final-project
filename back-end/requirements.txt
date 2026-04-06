@@ -5,3 +5,4 @@ django-cors-headers
 PyPDF2
 google-generativeai
 python-dotenv
+gunicorn
