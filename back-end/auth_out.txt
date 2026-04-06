@@ -1,0 +1,11 @@
+Testing Registration...
+Register status: 400
+Register response: {"error":"A user with that username already exists."}
+
+Testing Duplicate Registration...
+Duplicate status: 400
+Duplicate response: {"error":"A user with that username already exists."}
+
+Testing Login...
+Login status: 200
+Login response: {"user":{"id":6,"username":"testusery@example.com","email":"testusery@example.com","profile":{"name":"Test User Y","bio":"","avatar_url":"","onboarding_completed":false,"target_role":"","experience_level":"","primary_interest":"","career_goal":"","created_at":"2026-03-14T09:25:24.919615Z"}},"refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NDUyNjg2MSwiaWF0IjoxNzczOTIyMDYxLCJqdGkiOiJlNGM0MmEwMWQ4NTk0YTcwYjYxN2I5ZWUyMDBiZWQ0NCIsInVzZXJfaWQiOiI2In0.P2gGLctnIiC7XGaLnLvfqvlwVbXnUvskJDYE7dU_nM4","access":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzc0MDA4NDYxLCJpYXQiOjE3NzM5MjIwNjEsImp0aSI6ImE4YTI5MDNlMmJmYjQ4NWI4YjU0NmE1YjViOTdjNmEyIiwidXNlcl9pZCI6IjYifQ.OwNzCXCeuMnmdkk6EAZViObcM4qxozO5Y-tbsdVet2w","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzc0MDA4NDYxLCJpYXQiOjE3NzM5MjIwNjEsImp0aSI6IjY0ZjBhN2EyZjQ1ZTRhMTRhZjk4OGIxZDAxMjA1ZWE3IiwidXNlcl9pZCI6IjYifQ.JWxLL-bMWGaqxly9LfY6JOkNTDQFux3APfS9tkjscrs"}

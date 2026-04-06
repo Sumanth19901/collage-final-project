@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 50% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 50% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 50% 12%;
+
+    --primary: 220 60% 15%;
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 210 25% 93%;
+    --secondary-foreground: 220 50% 12%;
+
+    --muted: 210 20% 95%;
+    --muted-foreground: 215 15% 50%;
+
+    --accent: 175 70% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 25% 90%;
+    --input: 214 25% 90%;
+    --ring: 175 70% 38%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(220 60% 15%), hsl(220 55% 22%), hsl(200 50% 25%));
+    --gradient-accent: linear-gradient(135deg, hsl(175 70% 38%), hsl(185 65% 45%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 98%));
+    --shadow-card: 0 1px 3px hsl(220 50% 12% / 0.06), 0 4px 12px hsl(220 50% 12% / 0.04);
+    --shadow-card-hover: 0 4px 12px hsl(220 50% 12% / 0.1), 0 8px 24px hsl(220 50% 12% / 0.06);
+    --shadow-hero: 0 20px 60px hsl(220 60% 15% / 0.3);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 50% 10%;
+    --foreground: 210 20% 98%;
+
+    --card: 220 55% 12%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 220 55% 12%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 210 20% 98%;
+    --primary-foreground: 220 60% 15%;
+
+    --secondary: 210 25% 15%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 215 20% 20%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 175 70% 45%;
+    --accent-foreground: 220 50% 10%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 215 20% 20%;
+    --input: 215 20% 20%;
+    --ring: 175 70% 45%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .shadow-hero {
+    box-shadow: var(--shadow-hero);
+  }
+
+  .text-gradient {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
